@@ -1,3 +1,6 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.reset()
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     fish.setPosition(randint(10, 160), randint(10, 120))
